@@ -1,0 +1,36 @@
+A for loop is a programming language statement which allows code to be repeatedly executed.
+
+The syntax is
+
+for ( <expression_1> ; <expression_2> ; <expression_3> )
+    <statement>
+expression_1 is used for intializing variables which are generally used for controlling the terminating flag for the loop.
+expression_2 is used to check for the terminating condition. If this evaluates to false, then the loop is terminated.
+expression_3 is generally used to update the flags/variables.
+
+
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+
+int main(){
+int i,a,b;
+cin>>a>>b;
+
+string nums[11] = {"one","two","three","four","five","six","seven","eight","nine","even","odd"};
+
+for (i=a; i<=b; i++){
+    if (i>9 && i%2==0)
+    {
+        cout<<nums[9]<<endl;
+    }
+    else if (i>9 && i%2!=0)
+    {
+            cout<<nums[10]<<endl;
+    }
+    else{
+        cout<<nums[i-1]<<endl;
+    }
+}
+}
